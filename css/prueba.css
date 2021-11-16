@@ -1,0 +1,87 @@
+/* Selector Global 
+*global : afecta a todos los elementos */
+
+*{
+    color: red
+}
+
+/* Selector por Etiqueta 
+hacen referencia a todos los elementos html que coincidan */
+
+h1{
+    color: red
+}
+
+/* Selector por .Clase
+las clases se pueden repetir y un elemento puede tener mas de una clase */
+
+.tittle{
+    color: red;
+}
+
+/* Selector por #id
+solo un elemento puede tener el mismo id en una pagina */
+
+#tittle{
+    color: red;
+}
+
+/* Selector por [Atributo]
+todos los elementos que contengan el atributo o valor de atributo en cuestion */
+
+[id='tittle']{
+    color: red;
+}
+
+/* Selector por Grupo
+N selectores se puede configurar con las mismas propiedades */
+
+#tittle, .tittle{
+    color: red;
+}
+
+/* descendente
+mas especifico el ejemplo mostrado explica que se modificara la etiqueta tittle que este
+dentro de body a color rojo*/
+
+body .tittle{
+    color: red;
+}
+
+/* > hijo directo
+los hijos directo del selector previo a > */
+
+body > .tittle{
+    color: red;
+}
+
+/* ~ hermano
+los elementos en el mismo nivel */
+
+h1 ~ h2{
+    color: red;
+}
+
+/* + adyacente
+como el hermano pero solo el mas cercano */
+
+h1 + h2{
+    color: red;
+}
+
+/* :pseudoclases
+representan estados de un elemento */
+
+h1:hover{
+    color: red;
+}
+
+/* ::pseudoelemento
+crean elementos especiales */
+h1::after{
+    content: "-" 
+}
+
+h1::before{
+    content: "-"
+}
